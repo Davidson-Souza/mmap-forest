@@ -22,8 +22,21 @@ stump del(stump s, proof hash_proof) {
     utreexo_sha512_256 roots[64];
     int count = calculate_roots(roots, s.num_leaves, 0, NULL, hash_proof);
 
+    printf("count %d\n", count);
+
     size_t* idxs = (size_t*)malloc(hash_proof.target_count * sizeof(size_t));
-    root_idxs(s.num_leaves, );
+    uint8_t root_count = root_idxs(s.num_leaves, idxs, hash_proof.target_count, hash_proof.targets);
+
+    if (count != root_count) {
+        printf("error!!! count and root_count are different");
+        return s;
+    }
+
+    for (int i = 0; i < count; i++) {
+        int idx = idxs[i];
+        s.merkle_roots.roots[idx] = roots[i];
+    }
+
     return s;
 }
 

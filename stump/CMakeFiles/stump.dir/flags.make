@@ -4,7 +4,7 @@
 # compile C with /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang
 C_DEFINES = 
 
-C_INCLUDES = -I/home/calvin/bitcoin-projects/mmap-forest/stump/include
+C_INCLUDES = -I/home/calvin/bitcoin-projects/mmap-forest/stump/include -I/nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include
 
 C_FLAGS = -std=gnu99
 

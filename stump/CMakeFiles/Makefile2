@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/calvin/bitcoin-projects/mmap-forest/stump
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/calvin/bitcoin-projects/mmap-forest/stump/build
+CMAKE_BINARY_DIR = /home/calvin/bitcoin-projects/mmap-forest/stump
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/stump.dir/clean
 CMakeFiles/stump.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stump.dir/build.make CMakeFiles/stump.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stump.dir/build.make CMakeFiles/stump.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=1,2,3,4 "Built target stump"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles --progress-num=1,2,3,4 "Built target stump"
 .PHONY : CMakeFiles/stump.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stump.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stump.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles 0
 .PHONY : CMakeFiles/stump.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ stump: CMakeFiles/stump.dir/rule
 # codegen rule for target.
 CMakeFiles/stump.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stump.dir/build.make CMakeFiles/stump.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target stump"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target stump"
 .PHONY : CMakeFiles/stump.dir/codegen
 
 # clean rule for target.

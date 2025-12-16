@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/calvin/bitcoin-projects/mmap-forest/stump")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/calvin/bitcoin-projects/mmap-forest/stump/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/calvin/bitcoin-projects/mmap-forest/stump")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/calvin/bitcoin-projects/mmap-forest/stump
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/calvin/bitcoin-projects/mmap-forest/stump/build
+CMAKE_BINARY_DIR = /home/calvin/bitcoin-projects/mmap-forest/stump
 
 # Include any dependencies generated for this target.
 include CMakeFiles/stump.dir/depend.make
@@ -73,9 +73,9 @@ CMakeFiles/stump.dir/codegen:
 .PHONY : CMakeFiles/stump.dir/codegen
 
 CMakeFiles/stump.dir/src/main.c.o: CMakeFiles/stump.dir/flags.make
-CMakeFiles/stump.dir/src/main.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/main.c
+CMakeFiles/stump.dir/src/main.c.o: src/main.c
 CMakeFiles/stump.dir/src/main.c.o: CMakeFiles/stump.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/stump.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/stump.dir/src/main.c.o"
 	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/main.c.o -MF CMakeFiles/stump.dir/src/main.c.o.d -o CMakeFiles/stump.dir/src/main.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/main.c
 
 CMakeFiles/stump.dir/src/main.c.i: cmake_force
@@ -87,9 +87,9 @@ CMakeFiles/stump.dir/src/main.c.s: cmake_force
 	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/main.c -o CMakeFiles/stump.dir/src/main.c.s
 
 CMakeFiles/stump.dir/src/util.c.o: CMakeFiles/stump.dir/flags.make
-CMakeFiles/stump.dir/src/util.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/util.c
+CMakeFiles/stump.dir/src/util.c.o: src/util.c
 CMakeFiles/stump.dir/src/util.c.o: CMakeFiles/stump.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/stump.dir/src/util.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/stump.dir/src/util.c.o"
 	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/util.c.o -MF CMakeFiles/stump.dir/src/util.c.o.d -o CMakeFiles/stump.dir/src/util.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/util.c
 
 CMakeFiles/stump.dir/src/util.c.i: cmake_force
@@ -101,9 +101,9 @@ CMakeFiles/stump.dir/src/util.c.s: cmake_force
 	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/util.c -o CMakeFiles/stump.dir/src/util.c.s
 
 CMakeFiles/stump.dir/src/stump.c.o: CMakeFiles/stump.dir/flags.make
-CMakeFiles/stump.dir/src/stump.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/stump.c
+CMakeFiles/stump.dir/src/stump.c.o: src/stump.c
 CMakeFiles/stump.dir/src/stump.c.o: CMakeFiles/stump.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/stump.dir/src/stump.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/stump.dir/src/stump.c.o"
 	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/stump.c.o -MF CMakeFiles/stump.dir/src/stump.c.o.d -o CMakeFiles/stump.dir/src/stump.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/stump.c
 
 CMakeFiles/stump.dir/src/stump.c.i: cmake_force
@@ -131,7 +131,7 @@ stump: CMakeFiles/stump.dir/compiler_depend.ts
 stump: /nix/store/llswcygvgv9x2sa3z6j7i0g5iqqmn5gn-openssl-3.6.0/lib/libssl.so
 stump: /nix/store/llswcygvgv9x2sa3z6j7i0g5iqqmn5gn-openssl-3.6.0/lib/libcrypto.so
 stump: CMakeFiles/stump.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable stump"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable stump"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stump.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +143,6 @@ CMakeFiles/stump.dir/clean:
 .PHONY : CMakeFiles/stump.dir/clean
 
 CMakeFiles/stump.dir/depend:
-	cd /home/calvin/bitcoin-projects/mmap-forest/stump/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/calvin/bitcoin-projects/mmap-forest/stump /home/calvin/bitcoin-projects/mmap-forest/stump /home/calvin/bitcoin-projects/mmap-forest/stump/build /home/calvin/bitcoin-projects/mmap-forest/stump/build /home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles/stump.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/calvin/bitcoin-projects/mmap-forest/stump && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/calvin/bitcoin-projects/mmap-forest/stump /home/calvin/bitcoin-projects/mmap-forest/stump /home/calvin/bitcoin-projects/mmap-forest/stump /home/calvin/bitcoin-projects/mmap-forest/stump /home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles/stump.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/stump.dir/depend
 
