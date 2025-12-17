@@ -86,10 +86,24 @@ CMakeFiles/stump.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stump.dir/src/main.c.s"
 	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/main.c -o CMakeFiles/stump.dir/src/main.c.s
 
+CMakeFiles/stump.dir/src/hex.c.o: CMakeFiles/stump.dir/flags.make
+CMakeFiles/stump.dir/src/hex.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/hex.c
+CMakeFiles/stump.dir/src/hex.c.o: CMakeFiles/stump.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/stump.dir/src/hex.c.o"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/hex.c.o -MF CMakeFiles/stump.dir/src/hex.c.o.d -o CMakeFiles/stump.dir/src/hex.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/hex.c
+
+CMakeFiles/stump.dir/src/hex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stump.dir/src/hex.c.i"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/calvin/bitcoin-projects/mmap-forest/stump/src/hex.c > CMakeFiles/stump.dir/src/hex.c.i
+
+CMakeFiles/stump.dir/src/hex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stump.dir/src/hex.c.s"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/hex.c -o CMakeFiles/stump.dir/src/hex.c.s
+
 CMakeFiles/stump.dir/src/util.c.o: CMakeFiles/stump.dir/flags.make
 CMakeFiles/stump.dir/src/util.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/util.c
 CMakeFiles/stump.dir/src/util.c.o: CMakeFiles/stump.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/stump.dir/src/util.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/stump.dir/src/util.c.o"
 	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/util.c.o -MF CMakeFiles/stump.dir/src/util.c.o.d -o CMakeFiles/stump.dir/src/util.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/util.c
 
 CMakeFiles/stump.dir/src/util.c.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/stump.dir/src/util.c.s: cmake_force
 CMakeFiles/stump.dir/src/stump.c.o: CMakeFiles/stump.dir/flags.make
 CMakeFiles/stump.dir/src/stump.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/stump.c
 CMakeFiles/stump.dir/src/stump.c.o: CMakeFiles/stump.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/stump.dir/src/stump.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/stump.dir/src/stump.c.o"
 	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/stump.c.o -MF CMakeFiles/stump.dir/src/stump.c.o.d -o CMakeFiles/stump.dir/src/stump.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/stump.c
 
 CMakeFiles/stump.dir/src/stump.c.i: cmake_force
@@ -114,24 +128,123 @@ CMakeFiles/stump.dir/src/stump.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stump.dir/src/stump.c.s"
 	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/stump.c -o CMakeFiles/stump.dir/src/stump.c.s
 
+CMakeFiles/stump.dir/src/varint.c.o: CMakeFiles/stump.dir/flags.make
+CMakeFiles/stump.dir/src/varint.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/varint.c
+CMakeFiles/stump.dir/src/varint.c.o: CMakeFiles/stump.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/stump.dir/src/varint.c.o"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/varint.c.o -MF CMakeFiles/stump.dir/src/varint.c.o.d -o CMakeFiles/stump.dir/src/varint.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/varint.c
+
+CMakeFiles/stump.dir/src/varint.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stump.dir/src/varint.c.i"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/calvin/bitcoin-projects/mmap-forest/stump/src/varint.c > CMakeFiles/stump.dir/src/varint.c.i
+
+CMakeFiles/stump.dir/src/varint.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stump.dir/src/varint.c.s"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/varint.c -o CMakeFiles/stump.dir/src/varint.c.s
+
+CMakeFiles/stump.dir/src/utreexo_proof.c.o: CMakeFiles/stump.dir/flags.make
+CMakeFiles/stump.dir/src/utreexo_proof.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof.c
+CMakeFiles/stump.dir/src/utreexo_proof.c.o: CMakeFiles/stump.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/stump.dir/src/utreexo_proof.c.o"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/utreexo_proof.c.o -MF CMakeFiles/stump.dir/src/utreexo_proof.c.o.d -o CMakeFiles/stump.dir/src/utreexo_proof.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof.c
+
+CMakeFiles/stump.dir/src/utreexo_proof.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stump.dir/src/utreexo_proof.c.i"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof.c > CMakeFiles/stump.dir/src/utreexo_proof.c.i
+
+CMakeFiles/stump.dir/src/utreexo_proof.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stump.dir/src/utreexo_proof.c.s"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof.c -o CMakeFiles/stump.dir/src/utreexo_proof.c.s
+
+CMakeFiles/stump.dir/src/utreexo_proof_io.c.o: CMakeFiles/stump.dir/flags.make
+CMakeFiles/stump.dir/src/utreexo_proof_io.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof_io.c
+CMakeFiles/stump.dir/src/utreexo_proof_io.c.o: CMakeFiles/stump.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/stump.dir/src/utreexo_proof_io.c.o"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/utreexo_proof_io.c.o -MF CMakeFiles/stump.dir/src/utreexo_proof_io.c.o.d -o CMakeFiles/stump.dir/src/utreexo_proof_io.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof_io.c
+
+CMakeFiles/stump.dir/src/utreexo_proof_io.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stump.dir/src/utreexo_proof_io.c.i"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof_io.c > CMakeFiles/stump.dir/src/utreexo_proof_io.c.i
+
+CMakeFiles/stump.dir/src/utreexo_proof_io.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stump.dir/src/utreexo_proof_io.c.s"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof_io.c -o CMakeFiles/stump.dir/src/utreexo_proof_io.c.s
+
+CMakeFiles/stump.dir/src/utreexo_roots_io.c.o: CMakeFiles/stump.dir/flags.make
+CMakeFiles/stump.dir/src/utreexo_roots_io.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_roots_io.c
+CMakeFiles/stump.dir/src/utreexo_roots_io.c.o: CMakeFiles/stump.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/stump.dir/src/utreexo_roots_io.c.o"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/utreexo_roots_io.c.o -MF CMakeFiles/stump.dir/src/utreexo_roots_io.c.o.d -o CMakeFiles/stump.dir/src/utreexo_roots_io.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_roots_io.c
+
+CMakeFiles/stump.dir/src/utreexo_roots_io.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stump.dir/src/utreexo_roots_io.c.i"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_roots_io.c > CMakeFiles/stump.dir/src/utreexo_roots_io.c.i
+
+CMakeFiles/stump.dir/src/utreexo_roots_io.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stump.dir/src/utreexo_roots_io.c.s"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_roots_io.c -o CMakeFiles/stump.dir/src/utreexo_roots_io.c.s
+
+CMakeFiles/stump.dir/src/target_preimage.c.o: CMakeFiles/stump.dir/flags.make
+CMakeFiles/stump.dir/src/target_preimage.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/target_preimage.c
+CMakeFiles/stump.dir/src/target_preimage.c.o: CMakeFiles/stump.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/stump.dir/src/target_preimage.c.o"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/target_preimage.c.o -MF CMakeFiles/stump.dir/src/target_preimage.c.o.d -o CMakeFiles/stump.dir/src/target_preimage.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/target_preimage.c
+
+CMakeFiles/stump.dir/src/target_preimage.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stump.dir/src/target_preimage.c.i"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/calvin/bitcoin-projects/mmap-forest/stump/src/target_preimage.c > CMakeFiles/stump.dir/src/target_preimage.c.i
+
+CMakeFiles/stump.dir/src/target_preimage.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stump.dir/src/target_preimage.c.s"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/target_preimage.c -o CMakeFiles/stump.dir/src/target_preimage.c.s
+
+CMakeFiles/stump.dir/src/utxo_extract.c.o: CMakeFiles/stump.dir/flags.make
+CMakeFiles/stump.dir/src/utxo_extract.c.o: /home/calvin/bitcoin-projects/mmap-forest/stump/src/utxo_extract.c
+CMakeFiles/stump.dir/src/utxo_extract.c.o: CMakeFiles/stump.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/stump.dir/src/utxo_extract.c.o"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stump.dir/src/utxo_extract.c.o -MF CMakeFiles/stump.dir/src/utxo_extract.c.o.d -o CMakeFiles/stump.dir/src/utxo_extract.c.o -c /home/calvin/bitcoin-projects/mmap-forest/stump/src/utxo_extract.c
+
+CMakeFiles/stump.dir/src/utxo_extract.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stump.dir/src/utxo_extract.c.i"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/calvin/bitcoin-projects/mmap-forest/stump/src/utxo_extract.c > CMakeFiles/stump.dir/src/utxo_extract.c.i
+
+CMakeFiles/stump.dir/src/utxo_extract.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stump.dir/src/utxo_extract.c.s"
+	/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/calvin/bitcoin-projects/mmap-forest/stump/src/utxo_extract.c -o CMakeFiles/stump.dir/src/utxo_extract.c.s
+
 # Object files for target stump
 stump_OBJECTS = \
 "CMakeFiles/stump.dir/src/main.c.o" \
+"CMakeFiles/stump.dir/src/hex.c.o" \
 "CMakeFiles/stump.dir/src/util.c.o" \
-"CMakeFiles/stump.dir/src/stump.c.o"
+"CMakeFiles/stump.dir/src/stump.c.o" \
+"CMakeFiles/stump.dir/src/varint.c.o" \
+"CMakeFiles/stump.dir/src/utreexo_proof.c.o" \
+"CMakeFiles/stump.dir/src/utreexo_proof_io.c.o" \
+"CMakeFiles/stump.dir/src/utreexo_roots_io.c.o" \
+"CMakeFiles/stump.dir/src/target_preimage.c.o" \
+"CMakeFiles/stump.dir/src/utxo_extract.c.o"
 
 # External object files for target stump
 stump_EXTERNAL_OBJECTS =
 
 stump: CMakeFiles/stump.dir/src/main.c.o
+stump: CMakeFiles/stump.dir/src/hex.c.o
 stump: CMakeFiles/stump.dir/src/util.c.o
 stump: CMakeFiles/stump.dir/src/stump.c.o
+stump: CMakeFiles/stump.dir/src/varint.c.o
+stump: CMakeFiles/stump.dir/src/utreexo_proof.c.o
+stump: CMakeFiles/stump.dir/src/utreexo_proof_io.c.o
+stump: CMakeFiles/stump.dir/src/utreexo_roots_io.c.o
+stump: CMakeFiles/stump.dir/src/target_preimage.c.o
+stump: CMakeFiles/stump.dir/src/utxo_extract.c.o
 stump: CMakeFiles/stump.dir/build.make
 stump: CMakeFiles/stump.dir/compiler_depend.ts
+stump: bitcoin/lib/libbitcoinkernel.a
 stump: /nix/store/llswcygvgv9x2sa3z6j7i0g5iqqmn5gn-openssl-3.6.0/lib/libssl.so
 stump: /nix/store/llswcygvgv9x2sa3z6j7i0g5iqqmn5gn-openssl-3.6.0/lib/libcrypto.so
 stump: CMakeFiles/stump.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable stump"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/calvin/bitcoin-projects/mmap-forest/stump/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable stump"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stump.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

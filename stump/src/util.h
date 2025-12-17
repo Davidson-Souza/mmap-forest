@@ -1,3 +1,6 @@
+#ifndef STUMP_UTIL_H
+#define STUMP_UTIL_H
+
 #include <stdbool.h>
 #include <stdint.h>
 
@@ -75,14 +78,12 @@ static inline bool is_root(uint64_t position, uint64_t num_leaves, uint8_t total
 }
 
 static uint8_t root_idx(uint64_t num_leaves, uint64_t position) {
-    printf("numleaves %ld\n", num_leaves);
     uint8_t total_rows = tree_rows(num_leaves);
     uint8_t idx = 0;
     for (int row = total_rows; row >= 0; row--) {
         if (!root_present(num_leaves, row)) {
             continue;
         }
-        printf("root present on row %d\n", row);
         uint64_t pos = position;
         for (uint8_t r = detect_row(position, total_rows); r < row; r++) {
             pos = parent(pos, total_rows);
@@ -119,29 +120,11 @@ static inline int deduplicate(size_t *arr, size_t size) {
 static inline uint8_t root_idxs(uint64_t num_leaves, size_t* root_indexes, uint32_t pos_count, uint64_t* positions) {
     for (int i = 0; i < pos_count; i++) {
         root_indexes[i] = root_idx(num_leaves, positions[i]);
-        printf("root index %ld\n", root_indexes[i]);
     }
 
     int c = deduplicate(root_indexes, pos_count);
     return c;
 }
-
-//int main() {
-//    int arr[] = {1, 2, 2, 3, 4, 4, 5};
-//    int size = sizeof(arr) / sizeof(arr[0]);
-//
-//    int uniqueCount = deduplicate(arr, size);
-//
-//    printf("Unique count: %d\n", uniqueCount);
-//    printf("Deduplicated array: ");
-//    for (int i = 0; i < uniqueCount; i++) {
-//        printf("%d ", arr[i]);
-//    }
-//    printf("\n");
-//
-//    return 0;
-//}
-
 
 int proof_positions(size_t target_count, uint64_t* targets, uint64_t num_leaves, uint8_t total_rows, uint64_t* proof_positions);
 
@@ -155,3 +138,5 @@ typedef struct {
 char* uint8_array_to_hex_string(const uint8_t array[32]);
 
 int calculate_roots(utreexo_sha512_256 calculated_roots[64], uint64_t num_leaves, size_t delhashes_count, utreexo_sha256* del_hashes, proof proof);
+
+#endif // STUMP_UTIL_H

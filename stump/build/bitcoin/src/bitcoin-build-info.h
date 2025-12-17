@@ -1,0 +1,1 @@
+#define BUILD_GIT_COMMIT "824b5c475655"

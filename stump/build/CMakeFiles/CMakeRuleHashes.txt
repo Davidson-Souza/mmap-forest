@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+7980560dcea1a7838fd4913e06967b8e bitcoin/doc/CMakeFiles/docs
+30c08b0260b75e199d3d735fe5b05b21 bitcoin/src/CMakeFiles/generate_build_info

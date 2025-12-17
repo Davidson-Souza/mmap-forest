@@ -14,18 +14,95 @@
 # EXTERNAL cache entries
 ########################
 
+//C flags appended for downstream builds.
+APPEND_CFLAGS:STRING=-Os -ffunction-sections -fdata-sections -fomit-frame-pointer -fno-asynchronous-unwind-tables -fno-unwind-tables -fno-stack-protector -fno-stack-clash-protection -fcf-protection=none -fno-plt -fno-pic -fno-PIE -fno-pie
+
+//C++ flags appended for downstream builds.
+APPEND_CXXFLAGS:STRING=-Os -ffunction-sections -fdata-sections -fomit-frame-pointer -fno-asynchronous-unwind-tables -fno-unwind-tables -fno-stack-protector -fno-stack-clash-protection -fcf-protection=none -fno-plt -fno-pic -fno-PIE -fno-pie -fvisibility=hidden
+
+//Linker flags appended for downstream builds.
+APPEND_LDFLAGS:STRING=-fuse-ld=lld -s -Wl,--gc-sections -Wl,--as-needed -Wl,-O1 -Wl,-z,norelro -Wl,-z,lazy -Wl,-z,noseparate-code -Wl,--icf=all -no-pie
+
+//Build bench_bitcoin executable.
+BUILD_BENCH:BOOL=OFF
+
+//Build bitcoin executable.
+BUILD_BITCOIN_BIN:BOOL=OFF
+
+//Build bitcoin-cli executable.
+BUILD_CLI:BOOL=OFF
+
+//Build bitcoind executable.
+BUILD_DAEMON:BOOL=OFF
+
+//Build for fuzzing.
+BUILD_FOR_FUZZING:BOOL=OFF
+
+//Build fuzz binary.
+BUILD_FUZZ_BINARY:BOOL=OFF
+
+//Build bitcoin-qt executable.
+BUILD_GUI:BOOL=OFF
+
+//Build Qt tests.
+BUILD_GUI_TESTS:BOOL=OFF
+
+//Build experimental bitcoinkernel library.
+BUILD_KERNEL_LIB:BOOL=ON
+
+//Build tests for bitcoinkernel library.
+BUILD_KERNEL_TEST:BOOL=OFF
+
+//Build test executables.
+BUILD_TESTS:BOOL=OFF
+
+//Build bitcoin-tx executable.
+BUILD_TX:BOOL=OFF
+
+//Build bitcoin-util executable.
+BUILD_UTIL:BOOL=OFF
+
+//Build experimental bitcoin-chainstate executable.
+BUILD_UTIL_CHAINSTATE:BOOL=OFF
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/nix/store/v9qgwx232gw625shbqadsn90r2iczbm4-llvm-binutils-18.1.8/bin/llvm-addr2line
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/nix/store/v9qgwx232gw625shbqadsn90r2iczbm4-llvm-binutils-18.1.8/bin/llvm-ar
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+//Choose the type of build.
+CMAKE_BUILD_TYPE:STRING=MinSizeRel
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
+
+//CXX compiler
+CMAKE_CXX_COMPILER:FILEPATH=/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang++
+
+//LLVM archiver
+CMAKE_CXX_COMPILER_AR:FILEPATH=/nix/store/v9qgwx232gw625shbqadsn90r2iczbm4-llvm-binutils-18.1.8/bin/llvm-ar
+
+//`clang-scan-deps` dependency scanner
+CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/nix/store/7l6wv859y0clr9xaql2v5ryw53ds8wzq-clang-tools-21.1.2/bin/clang-scan-deps
+
+//Generate index for LLVM archive
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/nix/store/v9qgwx232gw625shbqadsn90r2iczbm4-llvm-binutils-18.1.8/bin/llvm-ranlib
+
+//Flags used by the CXX compiler during all build types.
+CMAKE_CXX_FLAGS:STRING=
+
+//Flags used by the CXX compiler during DEBUG builds.
+CMAKE_CXX_FLAGS_DEBUG:STRING=-g
+
+//CXX flags for MinSizeRel.
+CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -ffunction-sections -fdata-sections -fomit-frame-pointer -fno-asynchronous-unwind-tables -fno-unwind-tables -fno-stack-protector -fno-stack-clash-protection -fcf-protection=none -fno-plt -fno-pic -fno-PIE -fno-pie -fvisibility=hidden
+
+//Flags used by the CXX compiler during RELEASE builds.
+CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the CXX compiler during RELWITHDEBINFO builds.
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
 CMAKE_C_COMPILER:FILEPATH=/nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/bin/clang
@@ -45,8 +122,8 @@ CMAKE_C_FLAGS:STRING=
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g
 
-//Flags used by the C compiler during MINSIZEREL builds.
-CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+//C flags for MinSizeRel.
+CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -ffunction-sections -fdata-sections -fomit-frame-pointer -fno-asynchronous-unwind-tables -fno-unwind-tables -fno-stack-protector -fno-stack-clash-protection -fcf-protection=none -fno-plt -fno-pic -fno-PIE -fno-pie
 
 //Flags used by the C compiler during RELEASE builds.
 CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
@@ -63,8 +140,8 @@ CMAKE_EXE_LINKER_FLAGS:STRING=
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
 
-//Flags used by the linker during MINSIZEREL builds.
-CMAKE_EXE_LINKER_FLAGS_MINSIZEREL:STRING=
+//Linker flags for MinSizeRel executables.
+CMAKE_EXE_LINKER_FLAGS_MINSIZEREL:STRING=-fuse-ld=lld -s -Wl,--gc-sections -Wl,--as-needed -Wl,-O1 -Wl,-z,norelro -Wl,-z,lazy -Wl,-z,noseparate-code -Wl,--icf=all -no-pie
 
 //Flags used by the linker during RELEASE builds.
 CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
@@ -142,9 +219,8 @@ CMAKE_SHARED_LINKER_FLAGS:STRING=
 // during DEBUG builds.
 CMAKE_SHARED_LINKER_FLAGS_DEBUG:STRING=
 
-//Flags used by the linker during the creation of shared libraries
-// during MINSIZEREL builds.
-CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=
+//Linker flags for MinSizeRel shared libraries.
+CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=-fuse-ld=lld -s -Wl,--gc-sections -Wl,--as-needed -Wl,-O1 -Wl,-z,norelro -Wl,-z,lazy -Wl,-z,noseparate-code -Wl,--icf=all -no-pie
 
 //Flags used by the linker during the creation of shared libraries
 // during RELEASE builds.
@@ -193,6 +269,15 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Enable external signer support.
+ENABLE_EXTERNAL_SIGNER:BOOL=OFF
+
+//Enable multiprocess binaries.
+ENABLE_IPC:BOOL=OFF
+
+//Enable wallet support.
+ENABLE_WALLET:BOOL=OFF
+
 //Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/nix/store/llswcygvgv9x2sa3z6j7i0g5iqqmn5gn-openssl-3.6.0/lib/libcrypto.so
 
@@ -207,6 +292,9 @@ PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/nix/store/0skggkamysbh0ksc3582lb69wzrpabcg-pkg-config-wrapper-0.29.2/bin/pkg-config
+
+//Attempt to use ccache for compiling.
+WITH_CCACHE:BOOL=OFF
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/nix/store/llswcygvgv9x2sa3z6j7i0g5iqqmn5gn-openssl-3.6.0/lib/libcrypto.so
@@ -248,6 +336,24 @@ CMAKE_COMMAND:INTERNAL=/nix/store/5bn5f4ivqf4xn19khh4kcg4ngnjs6spg-cmake-4.1.2/b
 CMAKE_CPACK_COMMAND:INTERNAL=/nix/store/5bn5f4ivqf4xn19khh4kcg4ngnjs6spg-cmake-4.1.2/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/nix/store/5bn5f4ivqf4xn19khh4kcg4ngnjs6spg-cmake-4.1.2/bin/ctest
+//ADVANCED property for variable: CMAKE_CXX_COMPILER
+CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
+CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS
+CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
+CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS
+CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
+CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_MINSIZEREL
+CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELEASE
+CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
+CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
@@ -316,7 +422,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

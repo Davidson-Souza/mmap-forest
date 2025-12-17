@@ -8,9 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/calvin/bitcoin-projects/mmap-forest/stump/src/hex.c" "CMakeFiles/stump.dir/src/hex.c.o" "gcc" "CMakeFiles/stump.dir/src/hex.c.o.d"
   "/home/calvin/bitcoin-projects/mmap-forest/stump/src/main.c" "CMakeFiles/stump.dir/src/main.c.o" "gcc" "CMakeFiles/stump.dir/src/main.c.o.d"
   "/home/calvin/bitcoin-projects/mmap-forest/stump/src/stump.c" "CMakeFiles/stump.dir/src/stump.c.o" "gcc" "CMakeFiles/stump.dir/src/stump.c.o.d"
+  "/home/calvin/bitcoin-projects/mmap-forest/stump/src/target_preimage.c" "CMakeFiles/stump.dir/src/target_preimage.c.o" "gcc" "CMakeFiles/stump.dir/src/target_preimage.c.o.d"
   "/home/calvin/bitcoin-projects/mmap-forest/stump/src/util.c" "CMakeFiles/stump.dir/src/util.c.o" "gcc" "CMakeFiles/stump.dir/src/util.c.o.d"
+  "/home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof.c" "CMakeFiles/stump.dir/src/utreexo_proof.c.o" "gcc" "CMakeFiles/stump.dir/src/utreexo_proof.c.o.d"
+  "/home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof_io.c" "CMakeFiles/stump.dir/src/utreexo_proof_io.c.o" "gcc" "CMakeFiles/stump.dir/src/utreexo_proof_io.c.o.d"
+  "/home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_roots_io.c" "CMakeFiles/stump.dir/src/utreexo_roots_io.c.o" "gcc" "CMakeFiles/stump.dir/src/utreexo_roots_io.c.o.d"
+  "/home/calvin/bitcoin-projects/mmap-forest/stump/src/utxo_extract.c" "CMakeFiles/stump.dir/src/utxo_extract.c.o" "gcc" "CMakeFiles/stump.dir/src/utxo_extract.c.o.d"
+  "/home/calvin/bitcoin-projects/mmap-forest/stump/src/varint.c" "CMakeFiles/stump.dir/src/varint.c.o" "gcc" "CMakeFiles/stump.dir/src/varint.c.o.d"
   "" "stump" "gcc" "CMakeFiles/stump.dir/link.d"
   )
 

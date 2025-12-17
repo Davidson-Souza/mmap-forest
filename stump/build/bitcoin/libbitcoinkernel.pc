@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${prefix}/lib64
+includedir=${prefix}/include
+
+Name: Bitcoin Core kernel library
+Description: Experimental library for the Bitcoin Core validation engine.
+Version: 30.99.0
+Libs: -L${libdir} -lbitcoinkernel
+Cflags: -I${includedir}

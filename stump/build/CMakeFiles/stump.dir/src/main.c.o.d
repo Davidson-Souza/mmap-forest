@@ -1,7 +1,6 @@
 CMakeFiles/stump.dir/src/main.c.o: \
   /home/calvin/bitcoin-projects/mmap-forest/stump/src/main.c \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/stdio.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/libc-header-start.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/ctype.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/features.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/features-time64.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/wordsize.h \
@@ -11,14 +10,33 @@ CMakeFiles/stump.dir/src/main.c.o: \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/long-double.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/gnu/stubs.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/gnu/stubs-64.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/typesizes.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/time64.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/endian.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/endianness.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types/locale_t.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types/__locale_t.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/errno.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/errno.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/linux/errno.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/asm/errno.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/asm-generic/errno.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/asm-generic/errno-base.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/stdbool.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/stdint.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/stdint.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/libc-header-start.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/wchar.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdint-intn.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdint-uintn.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdint-least.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/stdio.h \
   /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/stddef.h \
   /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_size_t.h \
   /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_null.h \
   /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/stdarg.h \
   /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stdarg___gnuc_va_list.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/typesizes.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/time64.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types/__fpos_t.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types/__mbstate_t.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types/__fpos64_t.h \
@@ -30,7 +48,6 @@ CMakeFiles/stump.dir/src/main.c.o: \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/floatn.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/floatn-common.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdio2-decl.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdio.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdio2.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/stdlib.h \
   /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_wchar_t.h \
@@ -41,10 +58,7 @@ CMakeFiles/stump.dir/src/main.c.o: \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types/clockid_t.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types/time_t.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types/timer_t.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdint-intn.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/endian.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/endian.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/endianness.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/byteswap.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/uintn-identity.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/sys/select.h \
@@ -62,22 +76,25 @@ CMakeFiles/stump.dir/src/main.c.o: \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/struct_mutex.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/struct_rwlock.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/alloca.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdlib-bsearch.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdlib-float.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdlib.h \
-  /home/calvin/bitcoin-projects/mmap-forest/stump/src/stump.h \
-  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/stdint.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/stdint.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/wchar.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdint-uintn.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdint-least.h \
-  /home/calvin/bitcoin-projects/mmap-forest/stump/src/parent_hash.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/string.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types/locale_t.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types/__locale_t.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/strings.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/strings_fortified.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/string_fortified.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/limits.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/limits.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/posix1_lim.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/local_lim.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/linux/limits.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/pthread_stack_min-dynamic.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/pthread_stack_min.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/posix2_lim.h \
+  /home/calvin/bitcoin-projects/mmap-forest/stump/src/hex.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_ptrdiff_t.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_offsetof.h \
+  /home/calvin/bitcoin-projects/mmap-forest/stump/src/stump.h \
+  /home/calvin/bitcoin-projects/mmap-forest/stump/src/parent_hash.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/evp.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/macros.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/opensslconf.h \
@@ -88,22 +105,12 @@ CMakeFiles/stump.dir/src/main.c.o: \
   /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stdarg___va_copy.h \
   /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stdarg_va_copy.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/types.h \
-  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/limits.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/limits.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/posix1_lim.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/local_lim.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/linux/limits.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/pthread_stack_min-dynamic.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/pthread_stack_min.h \
-  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/posix2_lim.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/e_os2.h \
   /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/inttypes.h \
   /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/inttypes.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/safestack.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/stack.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/core.h \
-  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_ptrdiff_t.h \
-  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_offsetof.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/core_dispatch.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/indicator.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/params.h \
@@ -133,4 +140,9 @@ CMakeFiles/stump.dir/src/main.c.o: \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/asn1err.h \
   /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/include/openssl/objectserr.h \
   /home/calvin/bitcoin-projects/mmap-forest/stump/src/util.h \
-  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/stdbool.h
+  /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof.h \
+  /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_proof_io.h \
+  /home/calvin/bitcoin-projects/mmap-forest/stump/src/utreexo_roots_io.h \
+  /home/calvin/bitcoin-projects/mmap-forest/stump/src/utxo_extract.h \
+  /home/calvin/bitcoin-projects/mmap-forest/stump/../include/kernel/bitcoinkernel.h \
+  /home/calvin/bitcoin-projects/mmap-forest/stump/src/target_preimage.h

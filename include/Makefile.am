@@ -1,3 +1,3 @@
 headers = utreexo.h utreexo.hpp
 
-include_HEADERS = $(headers)
+nobase_include_HEADERS = $(headers) kernel/bitcoinkernel.h

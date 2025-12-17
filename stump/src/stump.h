@@ -1,3 +1,6 @@
+#ifndef STUMP_H
+#define STUMP_H
+
 #include <stdint.h>
 
 #include "parent_hash.h"
@@ -14,5 +17,7 @@ typedef struct {
 } stump;
 
 stump add(stump s, utreexo_sha512_256 add);
-stump del(stump s, proof hash_proof);
-int verify(stump s, utreexo_sha512_256* hashes, proof hash_proof);
+stump del(stump s, proof hash_proof, size_t delhashes_count, utreexo_sha512_256* del_hashes);
+int verify(stump s, size_t hashes_count, utreexo_sha512_256* hashes, proof hash_proof);
+
+#endif /* STUMP_H */

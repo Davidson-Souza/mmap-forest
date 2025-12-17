@@ -18,17 +18,16 @@ stump add(stump s, struct utreexo_hash add) {
     return s;
 }
 
-stump del(stump s, proof hash_proof) {
+stump del(stump s, proof hash_proof, size_t delhashes_count, utreexo_sha512_256* del_hashes) {
     utreexo_sha512_256 roots[64];
     int count = calculate_roots(roots, s.num_leaves, 0, NULL, hash_proof);
-
-    printf("count %d\n", count);
 
     size_t* idxs = (size_t*)malloc(hash_proof.target_count * sizeof(size_t));
     uint8_t root_count = root_idxs(s.num_leaves, idxs, hash_proof.target_count, hash_proof.targets);
 
     if (count != root_count) {
-        printf("error!!! count and root_count are different");
+        //fprintf(stderr, "count and root_count are different\n. count %d, root count %d", count, root_count);
+        free(idxs);
         return s;
     }
 
@@ -37,10 +36,29 @@ stump del(stump s, proof hash_proof) {
         s.merkle_roots.roots[idx] = roots[i];
     }
 
+    free(idxs);
     return s;
 }
 
-int verify(stump s, struct utreexo_hash* hashes, proof hash_proof) {
+int verify(stump s, size_t hashes_count, struct utreexo_hash* hashes, proof hash_proof) {
+    utreexo_sha512_256 roots[64];
+    int count = calculate_roots(roots, s.num_leaves, hashes_count, hashes, hash_proof);
+
+    size_t* idxs = (size_t*)malloc(hash_proof.target_count * sizeof(size_t));
+    uint8_t root_count = root_idxs(s.num_leaves, idxs, hash_proof.target_count, hash_proof.targets);
+
+    if (count != root_count) {
+        printf("error!!! count and root_count are different");
+        return 1;
+    }
+
+    for (int i = 0; i < count; i++) {
+        int idx = idxs[i];
+        if (s.merkle_roots.roots[idx].hash != roots[i].hash) {
+            return 1;
+        }
+    }
+
     return 1;
 }
 
