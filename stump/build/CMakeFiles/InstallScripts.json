@@ -1,0 +1,18 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/test/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/doc/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/src/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/src/univalue/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/src/secp256k1/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/src/secp256k1/src/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/src/crypto/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/src/util/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/src/kernel/cmake_install.cmake",
+		"/home/calvin/bitcoin-projects/mmap-forest/stump/build/bitcoin/src/test/util/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

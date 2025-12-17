@@ -1,0 +1,29 @@
+CMakeFiles/stump.dir/src/varint.c.o: \
+  /home/calvin/bitcoin-projects/mmap-forest/stump/src/varint.c \
+  /home/calvin/bitcoin-projects/mmap-forest/stump/src/varint.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/stdbool.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/stddef.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_ptrdiff_t.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_size_t.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_wchar_t.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_null.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/__stddef_offsetof.h \
+  /nix/store/rbr732483cs1252jxz61wd7zza7fjn5a-clang-wrapper-18.1.8/resource-root/include/stdint.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/stdint.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/libc-header-start.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/features.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/features-time64.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/wordsize.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/timesize.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/stdc-predef.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/sys/cdefs.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/long-double.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/gnu/stubs.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/gnu/stubs-64.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/types.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/typesizes.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/time64.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/wchar.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdint-intn.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdint-uintn.h \
+  /nix/store/0vqrw0y515015i3065r9s00jcp1cd4hy-glibc-2.40-66-dev/include/bits/stdint-least.h

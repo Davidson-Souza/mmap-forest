@@ -1,0 +1,2 @@
+"/nix/store/v9qgwx232gw625shbqadsn90r2iczbm4-llvm-binutils-18.1.8/bin/llvm-ar" qc ../lib/libbitcoin_cli.a CMakeFiles/bitcoin_cli.dir/compat/stdin.cpp.o CMakeFiles/bitcoin_cli.dir/rpc/client.cpp.o
+"/nix/store/v9qgwx232gw625shbqadsn90r2iczbm4-llvm-binutils-18.1.8/bin/llvm-ranlib" ../lib/libbitcoin_cli.a

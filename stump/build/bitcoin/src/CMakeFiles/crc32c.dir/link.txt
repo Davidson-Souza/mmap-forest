@@ -1,0 +1,2 @@
+"/nix/store/v9qgwx232gw625shbqadsn90r2iczbm4-llvm-binutils-18.1.8/bin/llvm-ar" qc libcrc32c.a CMakeFiles/crc32c.dir/crc32c/src/crc32c.cc.o CMakeFiles/crc32c.dir/crc32c/src/crc32c_portable.cc.o CMakeFiles/crc32c.dir/crc32c/src/crc32c_sse42.cc.o
+"/nix/store/v9qgwx232gw625shbqadsn90r2iczbm4-llvm-binutils-18.1.8/bin/llvm-ranlib" libcrc32c.a

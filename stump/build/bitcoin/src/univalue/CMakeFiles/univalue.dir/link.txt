@@ -1,0 +1,2 @@
+"/nix/store/v9qgwx232gw625shbqadsn90r2iczbm4-llvm-binutils-18.1.8/bin/llvm-ar" qc libunivalue.a CMakeFiles/univalue.dir/lib/univalue.cpp.o CMakeFiles/univalue.dir/lib/univalue_get.cpp.o CMakeFiles/univalue.dir/lib/univalue_read.cpp.o CMakeFiles/univalue.dir/lib/univalue_write.cpp.o
+"/nix/store/v9qgwx232gw625shbqadsn90r2iczbm4-llvm-binutils-18.1.8/bin/llvm-ranlib" libunivalue.a

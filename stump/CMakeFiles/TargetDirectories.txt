@@ -1,0 +1,3 @@
+/home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles/stump.dir
+/home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles/edit_cache.dir
+/home/calvin/bitcoin-projects/mmap-forest/stump/CMakeFiles/rebuild_cache.dir
